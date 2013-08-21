@@ -35,7 +35,7 @@ JavaScript value object, containing `browser`, `os`, and `device`
 fields.
 
 Each contains `family`, `major`, `minor`, and `patch`, *when available
-in the user agent string*.  The family is a string in camel case (for
+from the user agent string*.  The family is a string in camel case (for
 example, "mobileSafari"); while major, minor, and patch can either be
 integers or occasionally strings (such as "beta").
 
@@ -85,6 +85,16 @@ in `req.headers['user-agent']`.
 
 A user agent description object, created from
 [window.navigator.userAgent](https://developer.mozilla.org/en-US/docs/Web/API/window.navigator.userAgent).
+
+
+## TODO
+
+* Parse results on the server could be cached.
+
+* On the standard Meteor stack (which serves the app HTML
+  dynamically), the parsed user agent info could be passed back to the
+  client from the server instead of shipping the parsing code to the
+  client.
 
 
 ## Support
