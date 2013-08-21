@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "useragent parser"
+  summary: "useragent parser for client and server"
 });
 
 Package.on_use(function (api) {
